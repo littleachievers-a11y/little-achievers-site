@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Achievers Early Childhood Development Centre</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background-color: #f0f8f5;
+      color: #2e8b57;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 2px solid #2e8b57;
+    }
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #2e8b57;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a.active {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    h2 {
+      color: #2e8b57;
+      text-align: center;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact-info, .programs {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: inline-block;
+      padding: 20px;
+      margin-top: 10px;
+      text-align: left;
+      max-width: 600px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .programs h3 {
+      color: #2e8b57;
+      margin-bottom: 5px;
+    }
+    footer {
+      background-color: #f0f8f5;
+      color: #2e8b57;
+      padding: 10px 0;
+      font-size: 14px;
+      text-align: center;
+      border-top: 2px solid #2e8b57;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a {
+      color: #2e8b57;
+      text-decoration: none;
+    }
+    /* Back to Top button */
+    #backToTop {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: opacity 0.3s;
+    }
+    #backToTop:hover {
+      background-color: #1f5c3c;
+    }
+    /* Theme toggle button */
+    #themeToggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    #themeToggle:hover {
+      background-color: #1f5c3c;
+    }
+    /* Dark theme styles */
+    body.dark {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+    body.dark header {
+      background-color: #2e8b57;
+      color: #ffffff;
+      border-bottom: 2px solid #ffd700;
+    }
+    body.dark nav {
+      background-color: #2e2e2e;
+      border-bottom: 1px solid #444;
+    }
+    body.dark nav a {
+      color: #ffd700;
+    }
+    body.dark .contact-info, body.dark .programs {
+      background-color: #2e2e2e;
+      color: #f0f0f0;
+    }
+    body.dark footer {
+      background-color: #2e8b57;
+      color: #ffffff;
+      border-top: 2px solid #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Little Achievers Early Childhood Development Centre</h1>
+    <p><em>Clear Minds Bright Futures</em></p>
+  </header>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <button id="themeToggle">Switch Theme</button>
+
+  <section id="home">
+    <h2>Welcome!</h2>
+    <p>At Little Achievers, we nurture young minds through creativity, learning, and play. Our goal is to build confident, curious learners ready for bright futures.</p>
+  </section>
+
+  <section id="programs">
+    <h2>Our Programs</h2>
+    <div class="programs">
+      <h3>Preschool</h3>
+      <p>Designed for ages 3–4, our preschool program focuses on early literacy, numeracy, and social skills through play-based learning.</p>
+
+      <h3>Kindergarten</h3>
+      <p>For ages 5–6, our kindergarten curriculum builds strong foundations in reading, writing, math, and creative exploration to prepare children for primary school.</p>
+
+      <h3>After-School Care</h3>
+      <p>We provide a safe, supportive environment for children after school hours, offering homework help, enrichment activities, and supervised play.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Address:</strong> 25 Little Achievers Avenue, Spanish Town, St. Catherine</p>
+      <p><strong>Phone:</strong> <a href="tel:8766491234">876-649-1234</a></p>
+      <p><strong>Website:</strong> <a href="http://www.littleachievers.edu.jm">www.littleachievers.edu.jm</a></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Little Achievers Early Childhood Development Centre is dedicated to fostering creativity, confidence, and curiosity in every child. Our experienced teachers and nurturing environment ensure that children grow academically, socially, and emotionally.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Little Achievers Early Childhood Development Centre</p>
+  </footer>
+
+  <!-- Back to Top button -->
+  <button id="backToTop">Back to Top</button>
+
+  <script>
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+
+      // Show Back to Top button after scrolling down
+      const backToTop = document.getElementById("backToTop");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+
+    // Scroll back to top when button is clicked
+    document.getElementById("backToTop").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click
