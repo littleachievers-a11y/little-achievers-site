@@ -85,3 +85,93 @@
     body.dark { background-color: #1e1e1e; color: #f0f0f0; }
     body.dark header { background-color: #2e8b57; color: #ffffff; border-bottom: 2px solid #ffd700; }
     body.dark nav { background-color: #2e2e2e; border-bottom: 1px solid #444; }
+    body.dark nav a { color: #ffd700; }
+    body.dark .contact-info, body.dark .programs { background-color: #2e2e2e; color: #f0f0f0; }
+    body.dark footer { background-color: #2e8b57; color: #ffffff; border-top: 2px solid #ffd700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Little Achievers Early Childhood Development Centre</h1>
+    <p><em>Clear Minds Bright Futures</em></p>
+  </header>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <button id="themeToggle">Switch Theme</button>
+
+  <section id="home">
+    <h2>Welcome!</h2>
+    <p>At Little Achievers, we nurture young minds through creativity, learning, and play. Our goal is to build confident, curious learners ready for bright futures.</p>
+  </section>
+
+  <section id="programs">
+    <h2>Our Programs</h2>
+    <div class="programs">
+      <h3>Preschool</h3>
+      <p>Designed for ages 3–4, our preschool program focuses on early literacy, numeracy, and social skills through play-based learning.</p>
+      <h3>Kindergarten</h3>
+      <p>For ages 5–6, our kindergarten curriculum builds strong foundations in reading, writing, math, and creative exploration to prepare children for primary school.</p>
+      <h3>After-School Care</h3>
+      <p>We provide a safe, supportive environment for children after school hours, offering homework help, enrichment activities, and supervised play.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Address:</strong> 25 Little Achievers Avenue, Spanish Town, St. Catherine</p>
+      <div class="contact-buttons">
+        <a href="tel:8766491234" class="contact-button phone-button">Call Us</a>
+        <a href="mailto:info@littleachievers.edu.jm?subject=Inquiry from Website" class="contact-button email-button">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Little Achievers Early Childhood Development Centre is dedicated to fostering creativity, confidence, and curiosity in every child. Our experienced teachers and nurturing environment ensure that children grow academically, socially, and emotionally.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Little Achievers Early Childhood Development Centre</p>
+  </footer>
+
+  <button id="backToTop">Back to Top</button>
+
+  <script>
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+      // Show Back to Top button
+      const backToTop = document.getElementById("backToTop");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+
+    // Scroll back to top
+    document.getElementById("backToTop").addEventListener("click", () => {
+      window.scroll
